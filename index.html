@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Aavartan" content="Aavartan is central India's largest 
+    tech fest. It is organised by Team TechnoCracy, the technical 
+    committee of NITRR. With a vision to bring into lights the students'
+     Technical skills and aptitude, Aavratan '19 is going to be grand."> 
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Aavartan" content="Aavartan 2k19 has wide range of events
+    to test students' technical skills and aptitude.
+    There are many brands who acknowledge the importance of Aavartan..
+    It is going to be much more bigger and grand this time."
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aavartan</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    
+  </head>
+  <body onload="myFunction()" id="top">
+    <div id="loading"></div>
+    <div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">LIVE NOW</h3>
+        </div>
+      </div><br>      <div class="inner cover">
+        <h1 class="cover-heading">OUR SITE HAS SHIFTED</h1>
+        <p class="lead cover-copy">Aavartan is bigger and better this time and so is Aavartan's new website....</br>
+        We have shifted our online presence to a new place...</br>
+        <span style="color:#05F5A2;">You will be redirected to our new website in <span id="countdown">5</span> seconds....</span></br>
+        If you are not redirected <a href="http://Aavartan.nitrr.ac.in/" target="_blank">Click Here</a></p>
+      </div>
+      <div class="mastfoot">
+        <div class="inner">
+          <p>&copy; Team TechnoCracy <a href="http://Aavartan.nitrr.ac.in/" target="_blank">Aavartan</a>.</p>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<script>
+  
+     var preloader=document.getElementById('loading');
+     function myFunction(){
+         preloader.style.display='none';
+     }
+     
+
+     var seconds = 5;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "http://Aavartan.nitrr.ac.in/";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 500);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
